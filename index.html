@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title>Hubungan Garis dan Sudut| Aulia Kusuma Ningsih</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css'rel='stylesheet'>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+  <div class="sidebar close">
+    <div class="logo-details">
+      <i class='bx bxl-patreon'></i>
+      <span class="logo_name">Garis&Sudut</span>
+    </div>
+    <ul class="nav-links">
+      <li>
+          <i class='bx bx-search-alt-2' ></i>
+          <input type="text" placeholder="Search...">
+        <!--<span class="tooltip">Dashboard</span>-->
+      </li>
+      <li>
+        <a href="KataPengantar.html">
+          <i class='bx bx-book-reader'></i>
+          <span class="link_name">Kata Pengantar</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">Kata Pengantar</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="BAB 1.html">
+          <i class='bx bx-list-ul' ></i>
+          <span class="link_name">BAB 1 : Pendahuluan</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">BAB 1 : Pendahuluan</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="BAB 2.html">
+          <i class='bx bx-list-ul' ></i>
+          <span class="link_name">BAB 2 : Hubungan Antar Garis</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">BAB 2 : Hubungan Antar Garis</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="BAB 3.html">
+          <i class='bx bx-list-ul' ></i>
+          <span class="link_name">BAB 3 : Mengenal Sudut</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">BAB 3 : Mengenal Sudut</a></li>
+        </ul>
+      </li>
+       <li>
+        <a href="BAB 4.html">
+          <i class='bx bx-list-ul' ></i>
+          <span class="link_name">BAB 4 : Hubungan Antar Sudut</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">BAB 4 : Hubungan Antar Sudut</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="GLOSARIUM.html">
+          <i class='bx bx-book-bookmark'></i>
+          <span class="link_name">Glosarium</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">Glosarium</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="DAPUS.html">
+          <i class='bx bx-notepad'></i>
+          <span class="link_name">Daftar Pustaka</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">Daftar Pustaka</a></li>
+        </ul>
+      </li>
+      <div class="profile-details">
+      <div class="profile-content">
+      </div>
+      <div class="name-job">
+        <div class="profile_name"><center>Aulia Kusuma Ningsih</center></div>
+        <div class="job">Garis&Sudut</div>
+      </div>
+    </div>
+  </div>
+  <section class="home-section">
+    <div class="home-content">
+      <i class='bx bx-menu' ></i>
+      <span class="text">Dashboard</span></div>
+      <center><a href="https://www.gambaranimasi.org/cat-selamat-datang-707.htm"><img src="https://www.gambaranimasi.org/data/media/707/animasi-bergerak-selamat-datang-0107.gif" border="0" alt="animasi-bergerak-selamat-datang-0107"/></a></center>
+      <center><iframe width="560" height="315" src="https://www.youtube.com/embed/2XE_PU3fRNM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/13v6-RHeKbo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+      </section>
+  <script>
+  let arrow = document.querySelectorAll(".arrow");
+  for (var i = 0; i < arrow.length; i++) {
+    arrow[i].addEventListener("click", (e)=>{
+   let arrowParent = e.target.parentElement.parentElement;//selecting main parent of arrow
+   arrowParent.classList.toggle("showMenu");
+    });
+  }
+  let sidebar = document.querySelector(".sidebar");
+  let sidebarBtn = document.querySelector(".bx-menu");
+  console.log(sidebarBtn);
+  sidebarBtn.addEventListener("click", ()=>{
+    sidebar.classList.toggle("close");
+  });
+  </script>
+</body>
+</html>
